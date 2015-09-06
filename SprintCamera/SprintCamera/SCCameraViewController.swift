@@ -10,6 +10,9 @@ import UIKit
 
 public class SCCameraViewController: UIViewController {
     
+    @IBOutlet weak var previewView: SCPreviewView!
+    var cameraController : SCCameraController? = nil
+    
     public static func createDefaultCameraViewController () -> SCCameraViewController {
         
         let vcToReturn = SCCameraViewController(nibName: "DefaultView", bundle: NSBundle(forClass: SCCameraViewController.classForCoder()))
@@ -21,7 +24,15 @@ public class SCCameraViewController: UIViewController {
     override public func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        cameraController = SCCameraController()
+        var error : NSError? = nil
+        if cameraController!.setUp(&error) {
+            
+            previewView.session = cameraController?.session
+            cameraController?.startSession()
+            
+        }
+        
     }
 
     override public func didReceiveMemoryWarning() {

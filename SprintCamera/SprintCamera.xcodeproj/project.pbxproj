@@ -17,6 +17,8 @@
 		3031291A1B9B4DCD002BCFF5 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303129191B9B4DCD002BCFF5 /* ExampleAppTests.swift */; };
 		303129221B9B5180002BCFF5 /* SCCameraViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
 		3099A9DD1B9BC95A001397B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099A9DC1B9BC95A001397B6 /* AVFoundation.framework */; };
+		3099A9DF1B9BCB5A001397B6 /* SCCameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3099A9DE1B9BCB5A001397B6 /* SCCameraController.swift */; };
+		3099A9E11B9BD6AD001397B6 /* SCPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3099A9E01B9BD6AD001397B6 /* SCPreviewView.swift */; };
 		30A4C92F1B9B5DC800086968 /* SprintCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46795BC21B99A8E100983475 /* SprintCamera.framework */; };
 		30A4C9301B9B5DC800086968 /* SprintCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46795BC21B99A8E100983475 /* SprintCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46795BC81B99A8E100983475 /* SprintCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 46795BC71B99A8E100983475 /* SprintCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -76,6 +78,8 @@
 		303129181B9B4DCD002BCFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		303129191B9B4DCD002BCFF5 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
 		3099A9DC1B9BC95A001397B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		3099A9DE1B9BCB5A001397B6 /* SCCameraController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCameraController.swift; sourceTree = "<group>"; };
+		3099A9E01B9BD6AD001397B6 /* SCPreviewView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCPreviewView.swift; sourceTree = "<group>"; };
 		46795BC21B99A8E100983475 /* SprintCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SprintCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46795BC61B99A8E100983475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46795BC71B99A8E100983475 /* SprintCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SprintCamera.h; sourceTree = "<group>"; };
@@ -187,6 +191,8 @@
 				46795BC51B99A8E100983475 /* Supporting Files */,
 				303128F71B9B481A002BCFF5 /* DefaultView.xib */,
 				303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */,
+				3099A9DE1B9BCB5A001397B6 /* SCCameraController.swift */,
+				3099A9E01B9BD6AD001397B6 /* SCPreviewView.swift */,
 			);
 			path = SprintCamera;
 			sourceTree = "<group>";
@@ -406,6 +412,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3099A9DF1B9BCB5A001397B6 /* SCCameraController.swift in Sources */,
+				3099A9E11B9BD6AD001397B6 /* SCPreviewView.swift in Sources */,
 				303128FA1B9B4AA6002BCFF5 /* SCCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
