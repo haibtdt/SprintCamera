@@ -45,5 +45,11 @@ public class SCCameraViewController: UIViewController {
         
     }
 
+    @IBAction func switchCamera(sender: AnyObject) {
+        
+        cameraController!.switchCamera()
+        
+        
+    }
 
 }

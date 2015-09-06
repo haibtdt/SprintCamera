@@ -19,6 +19,15 @@
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iq8-Ah-QYH">
+                    <rect key="frame" x="533" y="20" width="47" height="30"/>
+                    <state key="normal" title="Switch">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="switchCamera:" destination="-1" eventType="touchUpInside" id="guD-Af-hs3"/>
+                    </connections>
+                </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cBb-yc-t55">
                     <rect key="frame" x="273" y="550" width="55" height="30"/>
                     <state key="normal" title="Capture">
@@ -31,9 +40,11 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="cBb-yc-t55" secondAttribute="bottom" constant="20" symbolic="YES" id="ILj-FN-4dR"/>
+                <constraint firstAttribute="trailing" secondItem="Iq8-Ah-QYH" secondAttribute="trailing" constant="20" symbolic="YES" id="058-Xg-CZp"/>
+                <constraint firstItem="Iq8-Ah-QYH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" symbolic="YES" id="NTg-3Z-WnG"/>
                 <constraint firstAttribute="centerX" secondItem="cBb-yc-t55" secondAttribute="centerX" id="Nc5-sP-c0f"/>
                 <constraint firstAttribute="trailing" secondItem="3pV-zj-BkF" secondAttribute="trailing" id="Wtj-5V-WLG"/>
+                <constraint firstAttribute="bottom" secondItem="cBb-yc-t55" secondAttribute="bottom" constant="20" symbolic="YES" id="cNb-Dk-ZCg"/>
                 <constraint firstItem="3pV-zj-BkF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hu2-XI-MI9"/>
                 <constraint firstAttribute="bottom" secondItem="3pV-zj-BkF" secondAttribute="bottom" id="qYI-0T-soO"/>
                 <constraint firstItem="3pV-zj-BkF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qdF-4s-LFZ"/>
