@@ -10,7 +10,7 @@ import UIKit
 
 public class SCCameraViewController: UIViewController {
     
-    @IBOutlet weak var previewView: SCPreviewView!
+    @IBOutlet public weak var previewView: SCPreviewView!
     var cameraController : SCCameraController? = nil
     
     public static func createDefaultCameraViewController () -> SCCameraViewController {
@@ -45,14 +45,5 @@ public class SCCameraViewController: UIViewController {
         
     }
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

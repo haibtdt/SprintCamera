@@ -27,7 +27,7 @@ class SCCameraController: NSObject {
     func setUp(error : NSErrorPointer) -> Bool {
         
         session = AVCaptureSession()
-        session?.sessionPreset = AVCaptureSessionPresetHigh
+        session?.sessionPreset = AVCaptureSessionPresetPhoto
         
         let cameraDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
         if let cameraInput = AVCaptureDeviceInput.deviceInputWithDevice(cameraDevice!, error: error) as? AVCaptureDeviceInput {

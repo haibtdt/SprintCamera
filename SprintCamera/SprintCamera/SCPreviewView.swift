@@ -9,9 +9,9 @@
 import UIKit
 import AVFoundation
 
-class SCPreviewView: UIView {
+public class SCPreviewView: UIView {
 
-    override class func layerClass() -> AnyClass {
+    override public class func layerClass() -> AnyClass {
         
         return AVCaptureVideoPreviewLayer.classForCoder()
         
