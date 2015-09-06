@@ -7,12 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		303128F81B9B481A002BCFF5 /* DefaultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 303128F71B9B481A002BCFF5 /* DefaultView.xib */; };
+		303128FA1B9B4AA6002BCFF5 /* SCCameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */; };
+		303129041B9B4DCD002BCFF5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303129031B9B4DCD002BCFF5 /* AppDelegate.swift */; };
+		303129061B9B4DCD002BCFF5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303129051B9B4DCD002BCFF5 /* ViewController.swift */; };
+		303129091B9B4DCD002BCFF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 303129071B9B4DCD002BCFF5 /* Main.storyboard */; };
+		3031290B1B9B4DCD002BCFF5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3031290A1B9B4DCD002BCFF5 /* Images.xcassets */; };
+		3031290E1B9B4DCD002BCFF5 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3031290C1B9B4DCD002BCFF5 /* LaunchScreen.xib */; };
+		3031291A1B9B4DCD002BCFF5 /* ExampleAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 303129191B9B4DCD002BCFF5 /* ExampleAppTests.swift */; };
+		303129221B9B5180002BCFF5 /* SCCameraViewController.swift in Headers */ = {isa = PBXBuildFile; fileRef = 303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */; settings = {ATTRIBUTES = (Public, ); }; };
+		3099A9DD1B9BC95A001397B6 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3099A9DC1B9BC95A001397B6 /* AVFoundation.framework */; };
+		30A4C92F1B9B5DC800086968 /* SprintCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46795BC21B99A8E100983475 /* SprintCamera.framework */; };
+		30A4C9301B9B5DC800086968 /* SprintCamera.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 46795BC21B99A8E100983475 /* SprintCamera.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		46795BC81B99A8E100983475 /* SprintCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 46795BC71B99A8E100983475 /* SprintCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46795BCE1B99A8E100983475 /* SprintCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46795BC21B99A8E100983475 /* SprintCamera.framework */; };
 		46795BD51B99A8E100983475 /* SprintCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46795BD41B99A8E100983475 /* SprintCameraTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		303129141B9B4DCD002BCFF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46795BB91B99A8E100983475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 303128FE1B9B4DCD002BCFF5;
+			remoteInfo = ExampleApp;
+		};
+		303129231B9B549E002BCFF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 46795BB91B99A8E100983475 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 46795BC11B99A8E100983475;
+			remoteInfo = SprintCamera;
+		};
 		46795BCF1B99A8E100983475 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 46795BB91B99A8E100983475 /* Project object */;
@@ -22,7 +48,34 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		30A4C9311B9B5DC800086968 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30A4C9301B9B5DC800086968 /* SprintCamera.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		303128F71B9B481A002BCFF5 /* DefaultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DefaultView.xib; sourceTree = "<group>"; };
+		303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCameraViewController.swift; sourceTree = "<group>"; };
+		303128FF1B9B4DCD002BCFF5 /* ExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		303129021B9B4DCD002BCFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303129031B9B4DCD002BCFF5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		303129051B9B4DCD002BCFF5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		303129081B9B4DCD002BCFF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3031290A1B9B4DCD002BCFF5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3031290D1B9B4DCD002BCFF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		303129131B9B4DCD002BCFF5 /* ExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		303129181B9B4DCD002BCFF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		303129191B9B4DCD002BCFF5 /* ExampleAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAppTests.swift; sourceTree = "<group>"; };
+		3099A9DC1B9BC95A001397B6 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		46795BC21B99A8E100983475 /* SprintCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SprintCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		46795BC61B99A8E100983475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46795BC71B99A8E100983475 /* SprintCamera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SprintCamera.h; sourceTree = "<group>"; };
@@ -32,10 +85,26 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		303128FC1B9B4DCD002BCFF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30A4C92F1B9B5DC800086968 /* SprintCamera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303129101B9B4DCD002BCFF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46795BBE1B99A8E100983475 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3099A9DD1B9BC95A001397B6 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -50,11 +119,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		303129001B9B4DCD002BCFF5 /* ExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				303129031B9B4DCD002BCFF5 /* AppDelegate.swift */,
+				303129051B9B4DCD002BCFF5 /* ViewController.swift */,
+				303129071B9B4DCD002BCFF5 /* Main.storyboard */,
+				3031290A1B9B4DCD002BCFF5 /* Images.xcassets */,
+				3031290C1B9B4DCD002BCFF5 /* LaunchScreen.xib */,
+				303129011B9B4DCD002BCFF5 /* Supporting Files */,
+			);
+			path = ExampleApp;
+			sourceTree = "<group>";
+		};
+		303129011B9B4DCD002BCFF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				303129021B9B4DCD002BCFF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		303129161B9B4DCD002BCFF5 /* ExampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				303129191B9B4DCD002BCFF5 /* ExampleAppTests.swift */,
+				303129171B9B4DCD002BCFF5 /* Supporting Files */,
+			);
+			path = ExampleAppTests;
+			sourceTree = "<group>";
+		};
+		303129171B9B4DCD002BCFF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				303129181B9B4DCD002BCFF5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		46795BB81B99A8E100983475 = {
 			isa = PBXGroup;
 			children = (
 				46795BC41B99A8E100983475 /* SprintCamera */,
 				46795BD11B99A8E100983475 /* SprintCameraTests */,
+				303129001B9B4DCD002BCFF5 /* ExampleApp */,
+				303129161B9B4DCD002BCFF5 /* ExampleAppTests */,
 				46795BC31B99A8E100983475 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -64,6 +173,8 @@
 			children = (
 				46795BC21B99A8E100983475 /* SprintCamera.framework */,
 				46795BCD1B99A8E100983475 /* SprintCameraTests.xctest */,
+				303128FF1B9B4DCD002BCFF5 /* ExampleApp.app */,
+				303129131B9B4DCD002BCFF5 /* ExampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -71,8 +182,11 @@
 		46795BC41B99A8E100983475 /* SprintCamera */ = {
 			isa = PBXGroup;
 			children = (
+				3099A9DC1B9BC95A001397B6 /* AVFoundation.framework */,
 				46795BC71B99A8E100983475 /* SprintCamera.h */,
 				46795BC51B99A8E100983475 /* Supporting Files */,
+				303128F71B9B481A002BCFF5 /* DefaultView.xib */,
+				303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */,
 			);
 			path = SprintCamera;
 			sourceTree = "<group>";
@@ -110,12 +224,50 @@
 			buildActionMask = 2147483647;
 			files = (
 				46795BC81B99A8E100983475 /* SprintCamera.h in Headers */,
+				303129221B9B5180002BCFF5 /* SCCameraViewController.swift in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		303128FE1B9B4DCD002BCFF5 /* ExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3031291B1B9B4DCD002BCFF5 /* Build configuration list for PBXNativeTarget "ExampleApp" */;
+			buildPhases = (
+				303128FB1B9B4DCD002BCFF5 /* Sources */,
+				303128FC1B9B4DCD002BCFF5 /* Frameworks */,
+				303128FD1B9B4DCD002BCFF5 /* Resources */,
+				30A4C9311B9B5DC800086968 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303129241B9B549E002BCFF5 /* PBXTargetDependency */,
+			);
+			name = ExampleApp;
+			productName = ExampleApp;
+			productReference = 303128FF1B9B4DCD002BCFF5 /* ExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		303129121B9B4DCD002BCFF5 /* ExampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3031291E1B9B4DCD002BCFF5 /* Build configuration list for PBXNativeTarget "ExampleAppTests" */;
+			buildPhases = (
+				3031290F1B9B4DCD002BCFF5 /* Sources */,
+				303129101B9B4DCD002BCFF5 /* Frameworks */,
+				303129111B9B4DCD002BCFF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				303129151B9B4DCD002BCFF5 /* PBXTargetDependency */,
+			);
+			name = ExampleAppTests;
+			productName = ExampleAppTests;
+			productReference = 303129131B9B4DCD002BCFF5 /* ExampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		46795BC11B99A8E100983475 /* SprintCamera */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 46795BD81B99A8E100983475 /* Build configuration list for PBXNativeTarget "SprintCamera" */;
@@ -161,6 +313,13 @@
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = vn.haibui;
 				TargetAttributes = {
+					303128FE1B9B4DCD002BCFF5 = {
+						CreatedOnToolsVersion = 6.4;
+					};
+					303129121B9B4DCD002BCFF5 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 303128FE1B9B4DCD002BCFF5;
+					};
 					46795BC11B99A8E100983475 = {
 						CreatedOnToolsVersion = 6.4;
 					};
@@ -175,6 +334,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 46795BB81B99A8E100983475;
 			productRefGroup = 46795BC31B99A8E100983475 /* Products */;
@@ -183,15 +343,35 @@
 			targets = (
 				46795BC11B99A8E100983475 /* SprintCamera */,
 				46795BCC1B99A8E100983475 /* SprintCameraTests */,
+				303128FE1B9B4DCD002BCFF5 /* ExampleApp */,
+				303129121B9B4DCD002BCFF5 /* ExampleAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		303128FD1B9B4DCD002BCFF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303129091B9B4DCD002BCFF5 /* Main.storyboard in Resources */,
+				3031290E1B9B4DCD002BCFF5 /* LaunchScreen.xib in Resources */,
+				3031290B1B9B4DCD002BCFF5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		303129111B9B4DCD002BCFF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46795BC01B99A8E100983475 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303128F81B9B481A002BCFF5 /* DefaultView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,10 +385,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		303128FB1B9B4DCD002BCFF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				303129061B9B4DCD002BCFF5 /* ViewController.swift in Sources */,
+				303129041B9B4DCD002BCFF5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3031290F1B9B4DCD002BCFF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3031291A1B9B4DCD002BCFF5 /* ExampleAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46795BBD1B99A8E100983475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				303128FA1B9B4AA6002BCFF5 /* SCCameraViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +421,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		303129151B9B4DCD002BCFF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 303128FE1B9B4DCD002BCFF5 /* ExampleApp */;
+			targetProxy = 303129141B9B4DCD002BCFF5 /* PBXContainerItemProxy */;
+		};
+		303129241B9B549E002BCFF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 46795BC11B99A8E100983475 /* SprintCamera */;
+			targetProxy = 303129231B9B549E002BCFF5 /* PBXContainerItemProxy */;
+		};
 		46795BD01B99A8E100983475 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 46795BC11B99A8E100983475 /* SprintCamera */;
@@ -230,7 +438,92 @@
 		};
 /* End PBXTargetDependency section */
 
+/* Begin PBXVariantGroup section */
+		303129071B9B4DCD002BCFF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				303129081B9B4DCD002BCFF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3031290C1B9B4DCD002BCFF5 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3031290D1B9B4DCD002BCFF5 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		3031291C1B9B4DCD002BCFF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mai anh Tran (AFH895BL63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mai anh Tran (AFH895BL63)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d33f72d-70d9-4521-9fab-bdc8328b22ed";
+			};
+			name = Debug;
+		};
+		3031291D1B9B4DCD002BCFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mai anh Tran (AFH895BL63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mai anh Tran (AFH895BL63)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				INFOPLIST_FILE = ExampleApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d33f72d-70d9-4521-9fab-bdc8328b22ed";
+			};
+			name = Release;
+		};
+		3031291F1B9B4DCD002BCFF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
+			};
+			name = Debug;
+		};
+		303129201B9B4DCD002BCFF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ExampleAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExampleApp.app/ExampleApp";
+			};
+			name = Release;
+		};
 		46795BD61B99A8E100983475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -323,6 +616,9 @@
 		46795BD91B99A8E100983475 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mai anh Tran (AFH895BL63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mai anh Tran (AFH895BL63)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -331,13 +627,18 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d33f72d-70d9-4521-9fab-bdc8328b22ed";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		46795BDA1B99A8E100983475 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Mai anh Tran (AFH895BL63)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Mai anh Tran (AFH895BL63)";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -346,6 +647,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9d33f72d-70d9-4521-9fab-bdc8328b22ed";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
@@ -383,6 +685,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		3031291B1B9B4DCD002BCFF5 /* Build configuration list for PBXNativeTarget "ExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3031291C1B9B4DCD002BCFF5 /* Debug */,
+				3031291D1B9B4DCD002BCFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3031291E1B9B4DCD002BCFF5 /* Build configuration list for PBXNativeTarget "ExampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3031291F1B9B4DCD002BCFF5 /* Debug */,
+				303129201B9B4DCD002BCFF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		46795BBC1B99A8E100983475 /* Build configuration list for PBXProject "SprintCamera" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -399,6 +719,7 @@
 				46795BDA1B99A8E100983475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		46795BDB1B99A8E100983475 /* Build configuration list for PBXNativeTarget "SprintCameraTests" */ = {
 			isa = XCConfigurationList;
@@ -407,6 +728,7 @@
 				46795BDD1B99A8E100983475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
