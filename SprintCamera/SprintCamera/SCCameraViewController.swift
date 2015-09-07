@@ -42,6 +42,13 @@ public class SCCameraViewController: UIViewController {
     
     @IBAction public func capture(sender: AnyObject) {
         
+        cameraController?.captureStillImage { image, error  in
+            
+            self.dismissViewControllerAnimated(true, completion: { () -> Void in
+                
+            })
+            
+        }
         
     }
 

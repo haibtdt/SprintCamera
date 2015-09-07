@@ -131,6 +131,54 @@ class SCCameraController: NSObject {
     }
     
     
+    func captureStillImage (handler:((UIImage!, NSError!) -> Void)!) -> Void {
+        
+        let connection = captureOutput!.connectionWithMediaType(AVMediaTypeVideo)
+        if connection!.supportsVideoOrientation {
+            
+            connection.videoOrientation = currentVideoOrientation()
+            
+        }
+        
+        captureOutput?.captureStillImageAsynchronouslyFromConnection(connection) { (sampleBuffer, error) -> Void in
+            
+            if sampleBuffer != nil {
+                
+                let imageData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(sampleBuffer)
+                let image = UIImage(data: imageData)
+                handler(image, nil)
+                
+            } else {
+                
+                print("null sampleBuffer \(error.localizedDescription)")
+                handler(nil, error)
+                
+            }
+            
+        }
+    }
+    
+    
+    
+    func currentVideoOrientation () -> AVCaptureVideoOrientation {
+        
+        var orientationToReturn : AVCaptureVideoOrientation
+        switch UIDevice.currentDevice().orientation {
+            
+        case .Portrait:
+            orientationToReturn = .Portrait
+        case .LandscapeRight:
+            orientationToReturn = .LandscapeLeft
+        case .LandscapeLeft:
+            orientationToReturn = .LandscapeRight
+        default:
+            orientationToReturn = .PortraitUpsideDown
+            
+        }
+        
+        return orientationToReturn
+        
+    }
     
     func canSwitchCamera() -> Bool {
         
