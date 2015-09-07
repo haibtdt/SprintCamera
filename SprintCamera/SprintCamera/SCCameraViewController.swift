@@ -12,6 +12,7 @@ public class SCCameraViewController: UIViewController {
     
     @IBOutlet public weak var previewView: SCPreviewView!
     var cameraController : SCCameraController? = nil
+    public var imageAvailableHandler:((UIImage!, NSError!) -> Void)? = nil
     
     public static func createDefaultCameraViewController () -> SCCameraViewController {
         
@@ -42,13 +43,7 @@ public class SCCameraViewController: UIViewController {
     
     @IBAction public func capture(sender: AnyObject) {
         
-        cameraController?.captureStillImage { image, error  in
-            
-            self.dismissViewControllerAnimated(true, completion: { () -> Void in
-                
-            })
-            
-        }
+        cameraController?.captureStillImage(imageAvailableHandler)
         
     }
 
