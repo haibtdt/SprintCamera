@@ -32,7 +32,7 @@ class SCCameraController: NSObject {
         session?.sessionPreset = AVCaptureSessionPresetPhoto
         
         let cameraDevice = AVCaptureDevice.defaultDeviceWithMediaType(AVMediaTypeVideo)
-        if let cameraInput = AVCaptureDeviceInput.deviceInputWithDevice(cameraDevice!, error: error) as? AVCaptureDeviceInput {
+        if let cameraInput = try? AVCaptureDeviceInput(device: cameraDevice){
 
             
             if session!.canAddInput(cameraInput) {
@@ -102,8 +102,7 @@ class SCCameraController: NSObject {
     
         
         let deviceToSwitchTo = innactiveCamera()
-        var error : NSError? = nil
-        if let newInput : AVCaptureDeviceInput = AVCaptureDeviceInput.deviceInputWithDevice(deviceToSwitchTo, error: &error) as? AVCaptureDeviceInput{
+        if let newInput : AVCaptureDeviceInput = try? AVCaptureDeviceInput(device: deviceToSwitchTo) {
             
             session!.beginConfiguration()
             
@@ -228,7 +227,6 @@ class SCCameraController: NSObject {
 
             
         let availableDevices : [AVCaptureDevice] = AVCaptureDevice.devicesWithMediaType(AVMediaTypeVideo) as! [AVCaptureDevice]
-        let activeDevice = activeCamera()
         for device in availableDevices {
             
             if device.position == position {
