@@ -53,5 +53,14 @@ public class SCCameraViewController: UIViewController {
         
         
     }
+    
+    
+    @IBAction func dimiss(sender: AnyObject) {
+        
+        let error = NSError(domain: "SprintCamera", code: 0, userInfo: [NSLocalizedDescriptionKey:"USER_CANCELLED"])
+        imageAvailableHandler?(nil, error)
+        
+    }
+    
 
 }

@@ -24,8 +24,16 @@ class ViewController: UIViewController {
         let defaultCameraVC = SCCameraViewController.createDefaultCameraViewController()
         defaultCameraVC.imageAvailableHandler = { image, error in
             
-            self.imageView.image = image
-            self.dismissViewControllerAnimated(true, completion: nil)
+            if (error == nil) {
+                
+                self.imageView.image = image
+                self.dismissViewControllerAnimated(true, completion: nil)
+                
+            } else {
+                
+                self.dismissViewControllerAnimated(true, completion: nil)
+                
+            }
             
         }
         self.presentViewController(defaultCameraVC, animated: true, completion: nil)
