@@ -24,6 +24,7 @@
 		46795BC81B99A8E100983475 /* SprintCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 46795BC71B99A8E100983475 /* SprintCamera.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		46795BCE1B99A8E100983475 /* SprintCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 46795BC21B99A8E100983475 /* SprintCamera.framework */; };
 		46795BD51B99A8E100983475 /* SprintCameraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46795BD41B99A8E100983475 /* SprintCameraTests.swift */; };
+		92079F0F1BE0E28F00CCADD5 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92079F0E1BE0E28F00CCADD5 /* Media.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +87,7 @@
 		46795BCD1B99A8E100983475 /* SprintCameraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SprintCameraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46795BD31B99A8E100983475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		46795BD41B99A8E100983475 /* SprintCameraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SprintCameraTests.swift; sourceTree = "<group>"; };
+		92079F0E1BE0E28F00CCADD5 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +195,7 @@
 				303128F91B9B4AA6002BCFF5 /* SCCameraViewController.swift */,
 				3099A9DE1B9BCB5A001397B6 /* SCCameraController.swift */,
 				3099A9E01B9BD6AD001397B6 /* SCPreviewView.swift */,
+				92079F0E1BE0E28F00CCADD5 /* Media.xcassets */,
 			);
 			path = SprintCamera;
 			sourceTree = "<group>";
@@ -378,6 +381,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92079F0F1BE0E28F00CCADD5 /* Media.xcassets in Resources */,
 				303128F81B9B481A002BCFF5 /* DefaultView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
